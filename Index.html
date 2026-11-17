@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zaatar House | Bakery and café in Zamalek, Cairo</title>
+<meta name="description" content="Levantine bakes and Egyptian breakfasts, baked every morning in Zamalek, Cairo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#1E3B2C; --green-2:#2A4F3B; --stone:#EFEBDD; --sumac:#A8321F;
+  --sesame:#D9B35F; --ink:#16261C; --light:#F3EFE0;
+  --display:"Reem Kufi","Cairo",system-ui,sans-serif; --body:"Cairo",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--stone);line-height:1.65;font-size:1.05rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sesame);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+
+header{background:var(--green);color:var(--light)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 0}
+nav strong{font-family:var(--display);font-size:1.15rem;font-weight:700}
+nav ul{display:flex;gap:1.5rem;list-style:none}
+nav a{text-decoration:none;padding:.25rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--sesame)}
+
+.hero{background:var(--green);color:var(--light);padding:3rem 0 5rem;overflow:hidden}
+.hero .ar{font-family:var(--display);font-weight:700;color:var(--sesame);font-size:clamp(4.5rem,17vw,11rem);line-height:1.05;display:block;text-align:left;direction:rtl;unicode-bidi:isolate}
+.hero h1{font-family:var(--display);font-weight:500;font-size:clamp(1.6rem,4vw,2.4rem);margin-top:.5rem}
+.hero p{max-width:34rem;margin-top:1rem;color:#D9D4C0}
+.actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:2px;text-decoration:none;font-weight:600;border:2px solid var(--sesame)}
+.btn.primary{background:var(--sesame);color:var(--ink)}
+.btn.ghost{color:var(--light)}
+.btn:hover{background:var(--sumac);border-color:var(--sumac);color:#fff}
+
+section{padding:4.5rem 0}
+h2{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.6rem);color:var(--green);margin-bottom:.4rem}
+.lead{max-width:36rem;margin-bottom:2.5rem}
+
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem}
+.board h3{font-family:var(--display);font-size:1.3rem;color:var(--sumac);margin-bottom:.8rem}
+.board li{list-style:none;display:flex;align-items:baseline;gap:.5rem;padding:.35rem 0}
+.board .dots{flex:1;border-bottom:2px dotted #8A9A8E;transform:translateY(-.25rem)}
+.board .price{font-weight:600;white-space:nowrap}
+.board small{display:block;color:#4F5F54;font-size:.88rem;line-height:1.3}
+.note{margin-top:2.5rem;font-size:.92rem;color:#4F5F54}
+
+.story{background:var(--green);color:var(--light)}
+.story h2{color:var(--sesame)}
+.story p{max-width:38rem;margin-top:1rem;color:#DDD8C5}
+
+.visit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:3rem}
+.visit dl{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.5rem}
+.visit dt{font-weight:600}
+footer{background:var(--ink);color:#C9C6B6;padding:1.8rem 0;font-size:.9rem}
+
+@media (max-width:560px){nav ul{gap:1rem}.hero{padding-bottom:3.5rem}section{padding:3.2rem 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <strong>Zaatar House</strong>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">Our story</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <span class="ar" lang="ar" dir="rtl">بيت الزعتر</span>
+      <h1>Zaatar House</h1>
+      <p>Levantine bakes and Egyptian breakfasts, out of the oven from 7 a.m. every day in Zamalek, Cairo.</p>
+      <div class="actions">
+        <a class="btn primary" href="#menu">See the menu</a>
+        <a class="btn ghost" href="https://wa.me/201000000000" rel="noopener noreferrer">Order on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="menu" aria-labelledby="menu-h">
+    <div class="wrap">
+      <h2 id="menu-h">Today’s menu</h2>
+      <p class="lead">Everything is baked or cooked in-house. Prices are in Egyptian pounds.</p>
+      <div class="board">
+        <div>
+          <h3>From the oven</h3>
+          <ul>
+            <li>Manakish za’atar <span class="dots"></span><span class="price">45</span></li>
+            <li>Cheese sambousek, 3 pieces <span class="dots"></span><span class="price">60</span></li>
+            <li>Spinach fatayer <span class="dots"></span><span class="price">55</span></li>
+            <li><span>Feteer meshaltet<small>with honey and cream</small></span><span class="dots"></span><span class="price">85</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Plates</h3>
+          <ul>
+            <li><span>Foul<small>tahini, lemon, baladi bread</small></span><span class="dots"></span><span class="price">70</span></li>
+            <li><span>Shakshuka<small>two eggs, tomato, peppers</small></span><span class="dots"></span><span class="price">110</span></li>
+            <li>Falafel plate <span class="dots"></span><span class="price">80</span></li>
+            <li>Halloumi and tomato sandwich <span class="dots"></span><span class="price">95</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>To drink</h3>
+          <ul>
+            <li>Mint lemonade <span class="dots"></span><span class="price">50</span></li>
+            <li>Karkadeh, iced <span class="dots"></span><span class="price">45</span></li>
+            <li>Sahlab <span class="dots"></span><span class="price">65</span></li>
+            <li>Turkish coffee <span class="dots"></span><span class="price">40</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Vegetarian dishes are marked on the printed menu. Tell us about any allergy when you order.</p>
+    </div>
+  </section>
+
+  <section id="story" class="story" aria-labelledby="story-h">
+    <div class="wrap">
+      <h2 id="story-h">Our story</h2>
+      <p>We started with one tray of manakish and a family za’atar blend from a market in Amman. Today a small team bakes every morning and mixes the spices by hand, with Cairo breakfast classics next to the Levantine ones.</p>
+      <p>Come early for warm bread. Stay for the coffee.</p>
+    </div>
+  </section>
+
+  <section id="visit" class="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <h2 id="visit-h">Visit us</h2>
+      <p class="lead">A short walk from the Zamalek bridges. Seating inside and on the sidewalk.</p>
+      <div class="visit-grid">
+        <dl>
+          <dt>Address</dt><dd>12 Example Street, Zamalek, Cairo</dd>
+          <dt>Daily</dt><dd>7 a.m. to 11 p.m.</dd>
+          <dt>Phone</dt><dd><a href="tel:+201000000000">+20 100 000 0000</a></dd>
+        </dl>
+        <div>
+          <p>Ordering for a group or an event? Message us and we will confirm within the hour.</p>
+          <div class="actions"><a class="btn primary" href="https://wa.me/201000000000" rel="noopener noreferrer">Message on WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Zaatar House. Demo concept for portfolio use; not a real business.</div>
+</footer>
+</body>
+</html>
